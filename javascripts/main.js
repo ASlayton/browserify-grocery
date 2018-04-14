@@ -1,1 +1,6 @@
-console.log('Why, hello there.');
+const xhr = require('./data.js');
+const startApplication = () => {
+  xhr();
+};
+
+startApplication();
