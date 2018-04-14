@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: #4e2f3f;
 }
 
 /* DEPARTMENT STYLES */
@@ -19,9 +19,9 @@ margin: 20px 0;
 .department-title {
   width: 100%;
   opacity: 1;
-  color: green;
+  color: oldlace;
   position: absolute;
   font-size: 40px;
   top: 50px;
-  left: 10px;
+  left: 25px;
 }
