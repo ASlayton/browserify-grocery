@@ -1,20 +1,19 @@
-const xhr = () => {
-  const myRequest = new XMLHttpRequest();
-  myRequest.addEventListener('load', ifFileLoads);
-  myRequest.addEventListener('error', ifFileFails);
-  myRequest.open('GET', '/db/departments.json');
-  myRequest.send();
+const loadDepartments = require('./departments');
+const dom = require('./dom');
+
+const whenDepartmentsLoad = function () {
+  const data = JSON.parse(this.responseText).departments;
+  dom(data);
 };
 
-function ifFileLoads () {
-  const myData = JSON.parse(this.responseText);
-  console.log(myData.departments);
+const errorFunction = function () {
+  console.error('shit broke');
 };
 
-function ifFileFails () {
-  console.error('I have failed, my friend.');
+const initializer = () => {
+  loadDepartments(whenDepartmentsLoad, errorFunction);
 };
 
 module.exports = {
-  xhr,
+  initializer,
 };
