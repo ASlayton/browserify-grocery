@@ -1,6 +1,3 @@
-const xhr = require('./data.js');
-const startApplication = () => {
-  xhr();
-};
+const data = require('./data');
 
-startApplication();
+data.initializer();
