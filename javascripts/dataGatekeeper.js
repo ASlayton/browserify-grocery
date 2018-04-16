@@ -15,7 +15,7 @@ const whenItemsLoad = function () {
 };
 
 const errorFunction = function () {
-  console.error('shit broke');
+  console.error('I have failed you, my friend.');
 };
 
 const initializer = () => {
