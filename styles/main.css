@@ -25,3 +25,13 @@ margin: 20px 0;
   top: 50px;
   left: 25px;
 }
+
+/* ITEMS */
+.item-image {
+  height: 100px;
+  width: 100px;
+}
+
+.item .panel {
+  height: 200px;
+}
