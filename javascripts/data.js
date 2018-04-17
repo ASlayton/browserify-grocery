@@ -18,7 +18,7 @@ const getItems = () => {
   return items;
 };
 
-const getItemsByDepartment = (departmentId) => {
+const getitemsByDepartment = (departmentId) => {
   const selectedItems = [];
   items.forEach((item) => {
     if (item.departmentId === departmentId) {
@@ -29,7 +29,7 @@ const getItemsByDepartment = (departmentId) => {
 };
 
 const setCart = (itemId, numberToAdd) => {
-  const itemPosition = items.map(function (item) {
+  const itemPosition = items.map(function (item)   {
     return item.id;
   }).indexOf(itemId);
   const newItem = items[itemPosition];
@@ -42,6 +42,6 @@ module.exports = {
   setDepartments,
   setItems,
   getItems,
-  getItemsByDepartment,
+  getitemsByDepartment,
   setCart,
 };

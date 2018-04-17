@@ -44,7 +44,7 @@ const itemsDomString = (items) => {
 
 const printToDom = (items) => {
   itemsOutputDiv.innerHTML = itemsDomString(items);
-  itemEvents;
+  itemEvents();
 };
 
 module.exports = printToDom;
