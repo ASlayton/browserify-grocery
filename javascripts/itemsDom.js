@@ -7,7 +7,7 @@ const itemsDomString = (items) => {
   items.forEach(item => {
 
     domString += `<div class="col-sm-3 text-center item">`;
-    domString +=   `<div class="panel panel-info">`;
+    domString +=   `<div class="panel panel-default">`;
     domString +=     `<div class="panel-heading">`;
     domString +=       `<h3 class="panel-title" data-item-id="${item.id}">${item.name}</h3>`;
     domString +=     `</div>`;
