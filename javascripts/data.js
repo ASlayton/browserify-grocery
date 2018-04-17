@@ -17,7 +17,7 @@ const getItems = () => {
   return items;
 };
 
-const getitemsByDepartment = (departmentId) => {
+const getItemsByDepartment = (departmentId) => {
   const selectedItems = [];
   items.forEach((item) => {
     if (item.departmentId === departmentId) {
@@ -32,5 +32,5 @@ module.exports = {
   setDepartments,
   setItems,
   getItems,
-  getitemsByDepartment,
+  getItemsByDepartment,
 };
