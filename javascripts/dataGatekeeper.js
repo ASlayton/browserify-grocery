@@ -3,19 +3,19 @@ const loadItems = require('./items');
 const departmentDom = require('./departmentDom');
 const data = require('./data');
 
-const whenDepartmentsLoad = function () {
-  const departmentsdata = JSON.parse(this.responseText).departments;
-  data.setDepartments(departmentsdata);
-  departmentDom(departmentsdata);
-};
-
 const whenItemsLoad = function () {
   const itemsData = JSON.parse(this.responseText).items;
   data.setItems(itemsData);
 };
 
+const whenDepartmentsLoad = function () {
+  const departmentsData = JSON.parse(this.responseText).departments;
+  data.setDepartments(departmentsData);
+  departmentDom(departmentsData);
+};
+
 const errorFunction = function () {
-  console.error('I have failed you, my friend.');
+  console.error('shit broke');
 };
 
 const initializer = () => {
