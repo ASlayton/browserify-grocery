@@ -9,10 +9,19 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-
-  <h1>Generic Grocery Store</h1>
+  <div>
+    <h1>Generic Grocery Store</h1>
+    <div class="col-xs-3">
+      <button class="btn btn-default btn-lg col-xs-12" id="go-to-departments">Return to Departments</button>
+    </div>
+    <div class="col-xs-3 col-xs-offset-6">
+      <button class="btn btn-info btn-lg col-xs-12" id = "go-to-cart">Cart</button>
+    </div>
+  </div>
   <div id="departments"></div>
   <div id="items"></div>
+  <div id="cart"></div>
+
 
   <!-- Latest compiled and minified JavaScript -->
   <script
