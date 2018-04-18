@@ -11,7 +11,7 @@ const cartButton = () => {
     departmentsDiv.innerHTML = '';
     itemsDiv.innerHTML = '';
     cartDiv.innerHTML = '';
-  })
+  });
 };
 
 const departmentsButton = () => {
@@ -25,5 +25,5 @@ const departmentsButton = () => {
 
 module.exports = {
   departmentsButton,
-  cartButton
+  cartButton,
 };
